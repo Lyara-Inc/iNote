@@ -1,7 +1,6 @@
 package com.app.inote
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import com.app.inote.common.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,6 +10,11 @@ class MainActivity : AppCompatActivity() {
         // Vairiable de type nullable
         var name : String? = "Bob"
 
+        // Un array
+        val tableau = arrayOf(7, 15, 7)
+        // Récupérer valeur d'un array
+        tableau.get(0)
+
         val age = 4
         val height = 1.60F
 
@@ -19,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         >Age : $age
         """.trimMargin(">"))
 
-
+        describePerson()
 
     }
 }

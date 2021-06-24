@@ -1,5 +1,7 @@
 package com.app.inote
 
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.app.inote.common.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,8 +24,6 @@ class MainActivity : AppCompatActivity() {
         >Nom : $name
         >Age : $age
         """.trimMargin(">"))
-
-        describePerson()
 
     }
 }
